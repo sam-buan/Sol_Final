@@ -14,26 +14,26 @@ Go to https://remix.ethereum.org/ a online IDE to create our Program
 
 ## The Minting Progress
 
-function minting (address _add, uint _val) public{
-        tokenttlsply += _val;
-        balance[_add]+= _val;
+ function mint(address your_adress, uint add_value)public {
+        totalsupply += add_value;
+        balances[your_adress] += add_value;
     }
 
 We Create a Function with a purpose of Minting the Token thus we called it Minting
 We will get the address with a value of _add and a none negative number for the value of our token
 
-the tokenttlsply will show us the total supply of our token after minting 
+the totalsupply will show us the total supply of our token after minting 
 the balance will show us the total balance of token in our address minting
 
 ## The Burning Progress
 
-function burning (address _add, uint _val) public{
-        if(balance[_add] >= _val){
-            tokenttlsply -= _val;
-            balance[_add] -= _val;
+ function burn(address your_adress, uint burn_value)public {
+        if(balances[your_adress]>=burn_value){
+            totalsupply -= burn_value;
+            balances[your_adress] -= burn_value;
         }
  We Create a Function with a purpose of Burning the token thus we called it Burning
  We will get the address with a value of _add and a none negative number for the value of our token
 
- the tokenttlsply will shous us the total supply of our token after doing the burning process
+ the totalsply will shous us the total supply of our token after doing the burning process
  the balance will show us the total balance of the token in our address after burning process
