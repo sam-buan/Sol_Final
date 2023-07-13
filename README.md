@@ -35,5 +35,5 @@ the balance will show us the total balance of token in our address minting
  We Create a Function with a purpose of Burning the token thus we called it Burning
  We will get the address with a value of _add and a none negative number for the value of our token
 
- the totalsply will shous us the total supply of our token after doing the burning process
+ the totalsupply will show us the total supply of our token after doing the burning process
  the balance will show us the total balance of the token in our address after burning process
